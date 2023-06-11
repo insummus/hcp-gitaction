@@ -9,7 +9,7 @@ jobs:
       - name: Import Secrets
         uses: hashicorp/vault-action@v2
         with:
-          url: http://127.0.0.1:8200
+          url: http://172.31.43.162:8200
           tlsSkipVerify: true
           token: ${{ secrets.VAULT_TOKEN }}
           secrets: |
