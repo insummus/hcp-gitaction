@@ -1,10 +1,10 @@
 FROM ruby:2.6.2
+#FROM ruby:latest
 MAINTAINER HashiCorp Vault Education <team-vault-education@hashicorp.com>
 
 ARG app_secret="UNSET_SECRET_PLEASE_OVERRIDE"
 
-RUN apt-get update && \
-    apt-get install -y net-tools
+#RUN apt-get update -y && apt-get install -y net-tools
 
 # Install gems
 ENV APP_HOME /app
