@@ -1,5 +1,4 @@
-FROM ruby:latest
-#FROM ruby:2.6.2
+FROM ruby:2.6.2
 MAINTAINER HashiCorp Vault Education <team-vault-education@hashicorp.com>
 
 ARG app_secret="UNSET_SECRET_PLEASE_OVERRIDE"
